@@ -85,8 +85,8 @@ public class CalculateAverage_PEWorkshop8 {
             // handle collisions
             Row nextRow = r.next;
             while (nextRow != null) {
-                if (r.hashCode == hashCode && arraysEquals(r.locationNameBytes, r.locationNameBytes.length,
-                        locationBytes, locationBytesLength)) {
+                if (nextRow.hashCode == hashCode && arraysEquals(nextRow.locationNameBytes,
+                        nextRow.locationNameBytes.length, locationBytes, locationBytesLength)) {
                     nextRow.update(temperature);
                     return;
                 }
